@@ -21,5 +21,8 @@
     <ClCompile Include="Week2_1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week2_1_logical.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
