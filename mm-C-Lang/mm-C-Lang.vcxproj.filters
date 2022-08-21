@@ -24,5 +24,14 @@
     <ClCompile Include="Week2_1_logical.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week2_1_printBitMask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week2_1_typecast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week2_1_Pointer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

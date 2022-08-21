@@ -10,7 +10,7 @@ unsigned char  func1(unsigned char num, unsigned char moves)
 }
 
 
-int main()
+int main_2_2()
 {
 	int num1 = 10;
 	int num2 = 20;
@@ -40,10 +40,11 @@ int main()
 	// unsigned char num2 = 1 // 00000001
 		 num3 = 0b00000011;
 	char mask = 0b00000001; 
-			      00000010
+//			      00000010
 			  //  00000001
 	char maskResult = num3 & mask;
 
 	printf("%d", maskResult);
 
+	return 0;
 }

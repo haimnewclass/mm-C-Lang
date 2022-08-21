@@ -142,6 +142,9 @@
     <ClCompile Include="mm-C-Lang.c" />
     <ClCompile Include="Week2_1.c" />
     <ClCompile Include="Week2_1_logical.c" />
+    <ClCompile Include="Week2_1_Pointer.c" />
+    <ClCompile Include="Week2_1_printBitMask.c" />
+    <ClCompile Include="Week2_1_typecast.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
