@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mm-C-Lang.cpp">
+    <ClCompile Include="mm-C-Lang.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week2_1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
