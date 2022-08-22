@@ -8,10 +8,12 @@ int main_2_1_3()
 {
     unsigned char  num = 20;
 	int bigNum = 1000 ;
+	// implicit
+	bigNum = num;
+	// explicit
+	num = (char) bigNum;
 
-	// type cast
-
-	//bigNum = num;
+	 bigNum = num;
 	// type cast 
 	num = (char) bigNum;
 

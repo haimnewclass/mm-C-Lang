@@ -145,7 +145,9 @@
     <ClCompile Include="Week2_1_Pointer.c" />
     <ClCompile Include="Week2_1_printBitMask.c" />
     <ClCompile Include="Week2_1_typecast.c" />
+    <ClCompile Include="Week2_2_Files.c" />
     <ClCompile Include="Week2_2_Homework.c" />
+    <ClCompile Include="Week2_2_PointersClassWork.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

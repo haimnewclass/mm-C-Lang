@@ -6,7 +6,7 @@
 
 
 
-int main()
+int main_2_2_5()
 {
 	 
 	 
