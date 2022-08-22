@@ -8,11 +8,7 @@
 
 int main()
 {
-
-	char tt = 0b10000000;
-	char t1 = -12;
-	char t3 = tt & t1;
-	unsigned char t4 = t3 ^ 0b11111111;
+	 
 	 
 	int a = 90;
 	int c = 88;

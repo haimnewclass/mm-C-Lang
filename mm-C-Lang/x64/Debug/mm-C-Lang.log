@@ -1,7 +1,7 @@
 ﻿  Week2_1_Pointer.c
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(18,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(18,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
 C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(22,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
 C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(22,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(26,9): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'int *'
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(26,9): warning C4313: 'printf': '%x' in format string conflicts with argument 1 of type 'int *'
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(38,13): warning C4133: '=': incompatible types - from 'int *' to 'char *'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_1_Pointer.c(34,13): warning C4133: '=': incompatible types - from 'int *' to 'char *'
   mm-C-Lang.vcxproj -> C:\Users\haim\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe
