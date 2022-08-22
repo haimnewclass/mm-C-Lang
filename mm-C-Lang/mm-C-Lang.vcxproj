@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt" />
+    <Text Include="Week2_2_File2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
