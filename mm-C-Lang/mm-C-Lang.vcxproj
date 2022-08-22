@@ -152,6 +152,7 @@
   <ItemGroup>
     <Text Include="Week2_2_File1.txt" />
     <Text Include="Week2_2_File2.txt" />
+    <Text Include="Week2_2_File3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

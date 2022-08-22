@@ -50,5 +50,8 @@
     <Text Include="Week2_2_File2.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="Week2_2_File3.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
