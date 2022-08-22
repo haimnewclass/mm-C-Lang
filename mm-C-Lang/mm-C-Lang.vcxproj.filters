@@ -33,5 +33,8 @@
     <ClCompile Include="Week2_1_Pointer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week2_2_Homework.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

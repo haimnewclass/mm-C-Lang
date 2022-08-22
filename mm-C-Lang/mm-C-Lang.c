@@ -4,6 +4,6 @@
 
 int main_0()
 {
-   
+    return 0;
 }
     
