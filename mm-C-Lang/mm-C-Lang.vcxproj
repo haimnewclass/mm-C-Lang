@@ -149,6 +149,9 @@
     <ClCompile Include="Week2_2_Homework.c" />
     <ClCompile Include="Week2_2_PointersClassWork.c" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Week2_2_File1.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
