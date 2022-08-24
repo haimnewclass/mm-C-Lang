@@ -5,7 +5,7 @@
 #pragma warning(disable:4996)
 
 
-int main()
+int main_2_3_8()
 {
 
 

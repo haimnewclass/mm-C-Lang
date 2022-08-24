@@ -54,6 +54,9 @@
     <ClCompile Include="Week2_3_StructureAndFiles.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week2_3_sprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">

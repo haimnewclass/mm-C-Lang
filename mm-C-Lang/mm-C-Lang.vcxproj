@@ -150,6 +150,7 @@
     <ClCompile Include="Week2_2_PointersClassWork.c" />
     <ClCompile Include="Week2_3_DynStrings.c" />
     <ClCompile Include="Week2_3_FilesWrite.c" />
+    <ClCompile Include="Week2_3_sprintf.c" />
     <ClCompile Include="Week2_3_Structure.c" />
     <ClCompile Include="Week2_3_StructureAndFiles.c" />
   </ItemGroup>
