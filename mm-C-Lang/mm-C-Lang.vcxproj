@@ -148,6 +148,8 @@
     <ClCompile Include="Week2_2_Files.c" />
     <ClCompile Include="Week2_2_Homework.c" />
     <ClCompile Include="Week2_2_PointersClassWork.c" />
+    <ClCompile Include="Week2_3_DynStrings.c" />
+    <ClCompile Include="Week2_3_FilesWrite.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt" />

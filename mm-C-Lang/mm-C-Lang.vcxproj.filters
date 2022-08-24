@@ -42,6 +42,12 @@
     <ClCompile Include="Week2_2_Files.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week2_3_DynStrings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week2_3_FilesWrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">

@@ -1,12 +1,15 @@
 
-#include <stdio.h>
- 
 
+#include <stdio.h>
+#include <stdlib.h> 
+#include <string.h>
 #pragma warning(disable:4996)
 
 
-int main()
+int main_2_3_2()
 {
+
+	
 	int* i;
 	FILE* f;
 
@@ -30,3 +33,4 @@ int main()
 	}
 	
 }
+
