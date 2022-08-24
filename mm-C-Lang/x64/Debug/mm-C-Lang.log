@@ -1,2 +1,4 @@
-﻿  Week2_3_Structure.c
+﻿  Week2_3_StructureAndFiles.c
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_3_StructureAndFiles.c(50,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week2_3_StructureAndFiles.c(46,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   mm-C-Lang.vcxproj -> C:\Users\haim\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe

@@ -5,7 +5,7 @@
 #pragma warning(disable:4996)
 
 
-int main()
+int main_2_3_7()
 {
 	
 
@@ -16,15 +16,15 @@ int main()
 		char name[100];
 		char color[100];
 	};
- 
 	struct Item kuku;
+
 
 	struct Item item2;
 
 	kuku.price = 12;
 	strcpy(kuku.name, "Cola");
 	strcpy(kuku.color, "Black");
-
+	kuku.price = 34;
 
 	item2.price = 9;
 	strcpy(item2.name, "Pepsi");
@@ -32,8 +32,11 @@ int main()
 	//printf("Item:%s Price:%d", kuku.name, kuku.price);
 
 
+
+
 	struct Item itemList[10];
 	
+ 
 	for (int i = 0; i < 3; i++)
 	{
 
