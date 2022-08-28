@@ -4,7 +4,7 @@
 #pragma warning(disable:4996)
 
 
-int main()
+int main_3_100()
 {
 	char str1[100];
 	char str2[200] = "Abanibioboebe";

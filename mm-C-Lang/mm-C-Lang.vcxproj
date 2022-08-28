@@ -153,6 +153,8 @@
     <ClCompile Include="Week2_3_sprintf.c" />
     <ClCompile Include="Week2_3_Structure.c" />
     <ClCompile Include="Week2_3_StructureAndFiles.c" />
+    <ClCompile Include="Week3_1_WriteStructIntoFile.cpp" />
+    <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt" />

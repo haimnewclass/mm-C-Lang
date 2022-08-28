@@ -57,6 +57,12 @@
     <ClCompile Include="Week2_3_sprintf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week_3_1_BinFiles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week3_1_WriteStructIntoFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">
