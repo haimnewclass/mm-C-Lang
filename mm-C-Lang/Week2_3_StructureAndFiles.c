@@ -16,6 +16,8 @@ int main_2_3_8()
 		char name[100];
 		char color[100];
 	};
+
+
 	struct Item kuku;
 	struct Item kuku2;
 

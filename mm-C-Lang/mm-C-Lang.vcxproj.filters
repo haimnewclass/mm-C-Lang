@@ -66,6 +66,12 @@
     <ClCompile Include="Week3_1_BibFile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week3_1_ArraysFile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week3_1_StructuresAndMalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">

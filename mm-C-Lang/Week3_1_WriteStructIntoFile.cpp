@@ -4,7 +4,7 @@
 #pragma warning(disable:4996)
 
 
-int main()
+int main_3_1_5()
 {
 	FILE* f;
 	struct student
@@ -45,5 +45,5 @@ int main()
 		fclose(f);
 	}
 	 
-
+	return 0;
 }
