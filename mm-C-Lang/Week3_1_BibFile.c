@@ -1,11 +1,11 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h> 
 #include <string.h>
 #pragma warning(disable:4996)
 
 
 int main_3_1_3()
-{
+{  // מרכז מעשה
 	FILE* f;
 
 	int a = 190;
