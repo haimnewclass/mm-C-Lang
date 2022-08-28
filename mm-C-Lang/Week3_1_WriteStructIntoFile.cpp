@@ -38,7 +38,6 @@ int main()
 	if (f == NULL)
 	{
 		// error
-
 	}
 	else
 	{
