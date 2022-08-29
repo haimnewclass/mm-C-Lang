@@ -3,22 +3,26 @@
 #include <stdlib.h> 
 #include <string.h>
 #pragma warning(disable:4996)
+struct Item {
+	int id;
+	int val;
+	struct Item* next;
+};
+
+struct Item* head = NULL;
+void freeLinkedList();
 
 int main()
 {
-	struct Item {
-		int id;
-		int val;
-		struct Item* next;
-	};
+	
 
 	int userResponse;
 
 	printf("Click 1 for Add \n Click 2 for Print all List\n Click 3 for Exit\n");
 	scanf("%d", &userResponse);
-	struct Item* head = NULL;
+	
 	struct Item* currentItem;
-	struct Item* prevItem;
+	struct Item* prevItem = NULL;
 
 	while (userResponse == 1)
 	{
@@ -27,24 +31,35 @@ int main()
 		if (head == NULL)
 		{
 			head = currentItem;
-			
 		}
 		else
 		{
 			prevItem->next = currentItem;
-			
 		}
 
 		scanf("%d %d", &currentItem->id, &currentItem->val);
 		currentItem->next = NULL;
-		prevItem = currentItem;
-
-
+		
 		printf("Click 1 for Add \n Click 2 for Print all List\n Click 3 for Exit\n");
 		scanf("%d", &userResponse);
 
+		prevItem = currentItem;
 	}
 
+	freeLinkedList();
 
 
+}
+
+
+void freeLinkedList()
+{
+	struct Item* currentItem = head;
+	struct Item* releaseItem = head;
+	while (currentItem != NULL)
+	{
+		releaseItem = currentItem;
+		currentItem = currentItem->next;
+		free(releaseItem);
+	}
 }
