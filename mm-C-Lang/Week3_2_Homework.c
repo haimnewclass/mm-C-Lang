@@ -17,7 +17,7 @@ struct sample
 };
 
 
-int main()
+int main_3_2_2()
 {
 	Targil6();
 

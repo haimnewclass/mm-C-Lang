@@ -4,7 +4,7 @@
 #include <string.h>
 #pragma warning(disable:4996)
 
-int main___()
+int main_3_2_3()
 {
 
 }
