@@ -157,6 +157,8 @@
     <ClCompile Include="Week3_1_BibFile.c" />
     <ClCompile Include="Week3_1_StructuresAndMalloc.c" />
     <ClCompile Include="Week3_1_WriteStructIntoFile.cpp" />
+    <ClCompile Include="Week3_2_AllocStructures.c" />
+    <ClCompile Include="Week3_2_Homework.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>

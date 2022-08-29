@@ -4,7 +4,7 @@
 #include <string.h>
 #pragma warning(disable:4996)
 
-int main()
+int main_3_2_1()
 {
 	struct Student
 	{
