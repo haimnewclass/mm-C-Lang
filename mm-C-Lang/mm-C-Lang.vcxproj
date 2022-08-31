@@ -160,6 +160,7 @@
     <ClCompile Include="Week3_2_AllocStructures.c" />
     <ClCompile Include="Week3_2_Homework.c" />
     <ClCompile Include="Week3_2_LinkedList.c" />
+    <ClCompile Include="Week3_3_Party_Files.c" />
     <ClCompile Include="Week3_3_RandomNumbers.c" />
     <ClCompile Include="Week3_3_SortedLinedList.c" />
     <ClCompile Include="Week3_3_Typedef.c" />

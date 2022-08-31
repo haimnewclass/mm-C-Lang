@@ -4,17 +4,7 @@
 #include <string.h>
 #pragma warning(disable:4996)
 
-struct Item* InsertNewItem(int val);
-void GenerateList();
-void GenerateXList(int x);
 
-void PrintList();
-void FreeList();
-void ResetList();
-struct Item* FindVal(int val);
-struct Item* ChangeVal(int oldVal, int newVal);
-
- 
 int main_3_3_3()
 {
 	int a;

@@ -5,19 +5,24 @@
 #pragma warning(disable:4996)
 
 
+//typedef  char[1000] Data;
+
+
+ 
 struct Item
 {
 	int Val;
 	struct Item* Next;
 	struct Item* Prev;
 };
+
 struct Item* Head = NULL;
 struct Item* Tail = NULL;
 void GenerateList();
 struct Item* FindVal(int val);
 struct Item* ChangeVal(int oldVal, int newVal);
 
-int main()
+int main_3_3_5()
 {
 	GenerateList();
 	ChangeVal(100, 3);
