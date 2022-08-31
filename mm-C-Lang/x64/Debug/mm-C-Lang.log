@@ -1,4 +1,2 @@
-﻿  Week3_3_RandomNumbers.c
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week3_3_RandomNumbers.c(11,17): warning C4013: 'time' undefined; assuming extern returning int
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week3_3_RandomNumbers.c(12,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  Week3_3_SortedLinedList.c
   mm-C-Lang.vcxproj -> C:\Users\haim\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe

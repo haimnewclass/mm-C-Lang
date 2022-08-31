@@ -6,10 +6,10 @@
  
  
 
-int main()
+int main_3_3_2()
 {
 	time_t i = time();
-	srand(i); 
+	srand(i); // do this one time at begining
 	int a = rand();
 	a = rand();
 	a = rand();

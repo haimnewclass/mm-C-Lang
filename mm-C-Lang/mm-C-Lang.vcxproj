@@ -161,6 +161,8 @@
     <ClCompile Include="Week3_2_Homework.c" />
     <ClCompile Include="Week3_2_LinkedList.c" />
     <ClCompile Include="Week3_3_RandomNumbers.c" />
+    <ClCompile Include="Week3_3_SortedLinedList.c" />
+    <ClCompile Include="Week3_3_Typedef.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>

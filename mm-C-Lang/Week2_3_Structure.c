@@ -3,7 +3,7 @@
 #include <stdlib.h> 
 #include <string.h>
 #pragma warning(disable:4996)
-
+	
 
 int main_2_3_7()
 {

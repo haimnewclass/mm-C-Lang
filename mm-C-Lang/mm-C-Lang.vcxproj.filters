@@ -84,6 +84,12 @@
     <ClCompile Include="Week3_3_RandomNumbers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week3_3_Typedef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week3_3_SortedLinedList.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">
