@@ -10,7 +10,7 @@ void GenerateXList(int x);
 
 void PrintList();
 void FreeList();
-
+void ResetList();
 struct Item* FindVal(int val);
 struct Item* ChangeVal(int oldVal, int newVal);
 
