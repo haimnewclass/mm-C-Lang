@@ -22,11 +22,11 @@ void GenerateList();
 struct Item* FindVal(int val);
 struct Item* ChangeVal(int oldVal, int newVal);
 
-int main_3_3_5()
-{
-	GenerateList();
-	ChangeVal(100, 3);
-}
+void LocateAfterTail(struct Item* item);
+void LocateBeforeHead(struct Item* item);
+void LocateBeforItem(struct Item* newItem, struct Item* itemInList);
+
+typedef char BOOLEAN;
 
 void GenerateList(){
 
@@ -84,4 +84,131 @@ struct Item* FindVal(int findVal)
 	}
 
 	return ret;
+}
+//////////////////
+
+struct Item*  findHigher(int val);
+
+void AddItem( int newItem) {
+
+	struct Item* Curr;
+
+
+	 
+	Curr = (struct Item*)malloc(sizeof(struct Item));
+
+
+	//TODO: Compleate the Random issue
+	Curr->Val = newItem;
+
+
+	if (Head == NULL)
+	{
+		Head = Curr;
+		Tail = Curr;
+		Curr->Next = NULL;
+		Curr->Prev = NULL;
+	}
+	else
+	{
+
+
+
+		struct Item* highItem =  findHigher(Curr->Val);
+		// not found higher , means that new item is the smallest in list
+		if (highItem == NULL)
+		{
+			LocateAfterTail(Curr);
+		}
+		else
+		{
+			if (highItem == Head)
+			{
+				LocateBeforeHead(Curr);
+			}
+			else
+			{
+				LocateBeforItem(Curr, highItem);
+			}
+		}
+
+
+
+	}
+	
+	 
+}
+
+BOOLEAN isHaed(struct Item* item)
+{
+	return (item->Prev == NULL) ? 1 : 0;
+}
+
+
+BOOLEAN isTail(struct Item* item)
+{
+	return (item->Next == NULL) ? 1 : 0;
+}
+
+void LocateAfterTail(struct Item* item)
+{
+	item->Next = NULL;
+	item->Prev = Tail;
+	Tail->Next = item;
+	Tail = item;
+}
+
+
+void LocateBeforeHead(struct Item* item)
+{
+	item->Next = Head;
+	item->Prev = NULL;
+	Head->Prev = item;
+	Head = item;
+}
+
+
+void LocateBeforItem(struct Item* newItem, struct Item* itemInList )
+{
+	itemInList->Prev->Next = newItem;
+	newItem->Prev = itemInList->Prev;
+	newItem->Next = itemInList;
+	itemInList->Prev = newItem;
+	
+}
+
+struct Item* findHigher(int val) {
+
+	struct Item* ret = NULL;
+	struct Item* Curr = Head;
+	while (Curr != NULL)
+	{
+		if (Curr->Val > val)
+		{
+			ret = Curr;
+			return ret;
+		}
+		Curr = Curr->Next;
+	}
+
+	return ret;
+ 
+
+}
+
+
+int main()
+{
+	AddItem(7);
+	AddItem(9);
+	AddItem(8);
+	AddItem(2);
+	AddItem(3);
+	AddItem(100);
+
+	AddItem(5);
+
+
+	GenerateList();
+	ChangeVal(100, 3);
 }
