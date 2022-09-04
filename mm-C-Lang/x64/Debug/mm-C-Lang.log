@@ -1,2 +1,5 @@
 ﻿  Week4_1Argv_Argc.c
+  Week4_1_CopyFiles.c
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_1_CopyFiles.c(22,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
   mm-C-Lang.vcxproj -> C:\Users\haim\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe
