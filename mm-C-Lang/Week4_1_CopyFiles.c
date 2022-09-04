@@ -38,7 +38,7 @@ void testCopy(char* fileSrc, char* fileDest)
 	fsrc = fopen(fileSrc, "r");
 	if (fsrc)
 	{
-		fread(memory, sizeof(char), count, fsrc);
+		int readPackages = fread(memory, sizeof(char), count, fsrc);
 		fclose(fsrc);
 	}
 	else

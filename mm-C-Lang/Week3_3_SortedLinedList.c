@@ -29,7 +29,7 @@ void LocateBeforItem(struct Item* newItem, struct Item* itemInList);
 typedef char BOOLEAN;
 
 void GenerateList(){
-
+	/*
 	struct Item* Curr;
 	struct Item* Old=NULL;
 
@@ -59,6 +59,7 @@ void GenerateList(){
 		}
 		Old = Curr;
 	}
+	*/
 }
 
 struct Item* ChangeVal(int oldVal, int newVal) {
@@ -170,7 +171,10 @@ void LocateBeforeHead(struct Item* item)
 
 void LocateBeforItem(struct Item* newItem, struct Item* itemInList )
 {
-	itemInList->Prev->Next = newItem;
+	//itemInList->Prev->Next = newItem;
+	struct Item* itemInList_prev = itemInList->Prev;
+	itemInList_prev->Next = newItem;
+
 	newItem->Prev = itemInList->Prev;
 	newItem->Next = itemInList;
 	itemInList->Prev = newItem;
@@ -197,7 +201,7 @@ struct Item* findHigher(int val) {
 }
 
 
-int main_3_3_11()
+int main()
 {
 	AddItem(7);
 	AddItem(9);

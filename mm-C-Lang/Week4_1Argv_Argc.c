@@ -5,7 +5,7 @@
 #pragma warning(disable:4996)
  
 
-int main(int argc, char* argv[])
+int main_4_1_80(int argc, char* argv[])
 {
 
  
