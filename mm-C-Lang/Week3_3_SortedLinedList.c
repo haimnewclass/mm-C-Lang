@@ -197,7 +197,7 @@ struct Item* findHigher(int val) {
 }
 
 
-int main()
+int main_3_3_11()
 {
 	AddItem(7);
 	AddItem(9);

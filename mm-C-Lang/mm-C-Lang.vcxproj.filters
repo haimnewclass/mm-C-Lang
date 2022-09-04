@@ -93,6 +93,9 @@
     <ClCompile Include="Week3_3_Party_Files.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week4_1Argv_Argc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">
