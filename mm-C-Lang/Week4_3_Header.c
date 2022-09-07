@@ -4,6 +4,9 @@
 #include <string.h>
 #pragma warning(disable:4996)
 
+#define FILE_NAME "Data3.bin"
+#define Version 1
+
 typedef struct s_item {
 	int key;
 	int val;
@@ -54,28 +57,32 @@ main()
 	Head = NULL;
 	Tail = NULL;
 
-
+	t_headerFile fileHeader;
+	fileHeader.ItemsCount = 0;
 	// crearte 10 items
 	for (int i = 0; i < 10; i++)
 	{
 		NewItem(i * 100, i);
+		fileHeader.ItemsCount++;
 	}
 
-	t_headerFile fileHeader;
+	
 	fileHeader.version = 1;
-	fileHeader.ItemsCount = 10;
 	fileHeader.serialNum = 12345;
 
 	// save in file
-	FILE* f = fopen("Data.bin", "w");
+	FILE* f = fopen(FILE_NAME, "w");
 	if (!f)
 	{
 		// error
 		return 1;
 	}
-
+	
+	// write the header into file
 	fwrite(&fileHeader, sizeof(t_headerFile), 1, f);
+
 	t_Item* curr = Head;
+	//write all items into file
 	while (curr != NULL)
 	{
 		fwrite(curr, sizeof(t_Item), 1, f);
@@ -84,11 +91,47 @@ main()
 	
 	fclose(f);
 
+	// free memory
+	curr = Head;
+	while (curr != NULL)
+	{
+		curr = curr->next;
+		free(Head);
+		Head = curr;
+	}
+
+
 	// read from file
+	f = fopen(FILE_NAME, "r");
+	if (!f)
+	{
+		// error
+		return 1;
+	}
 
+	t_headerFile headerOfFile;
+
+	
+	int read = fread(&headerOfFile, sizeof(t_headerFile), 1, f);
+	if (read == 0)
+	{
+		// error
+		return 1;
+	}
 	// build the list
+	Head = NULL;
+	Tail = NULL;
 
+	for (int i = 0; i < headerOfFile.ItemsCount; i++)
+	{
+		curr = (t_Item*) malloc(sizeof(t_Item));
 
+		read = fread(curr, sizeof(t_Item), 1,f);
+		
+		NewItem(curr->val, curr->key);		 
+	}
+
+	// free
 	curr = Head;
 	while (curr != NULL)
 	{		 
