@@ -1,4 +1,18 @@
 ﻿  Week4_3_Header.c
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header.c(129,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header.c(115,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header.c(116,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header.c(102,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Week4_3_Header2.c
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header2.c(31,13): warning C4133: '=': incompatible types - from 't_Item2 *' to 't_Item *'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header2.c(32,13): warning C4133: '=': incompatible types - from 't_Item2 *' to 't_Item *'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header2.c(37,19): warning C4133: '=': incompatible types - from 't_Item2 *' to 's_item *'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header2.c(38,13): warning C4133: '=': incompatible types - from 't_Item2 *' to 't_Item *'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header2.c(126,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header2.c(139,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_Header2.c(108,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Week4_3_UseFunc.c
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_UseFunc.c(11,14): warning C4101: 'k': unreferenced local variable
+  Week4_3_UseFunc2.c
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_UseFunc2.c(11,17): warning C4013: 'Biggets' undefined; assuming extern returning int
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week4_3_UseFunc2.c(10,14): warning C4101: 'h': unreferenced local variable
+  Generating Code...
   mm-C-Lang.vcxproj -> C:\Users\haim\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe

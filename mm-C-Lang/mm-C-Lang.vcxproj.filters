@@ -105,6 +105,15 @@
     <ClCompile Include="Week4_3_Header.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week4_3_Header2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week4_3_UseFunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week4_3_UseFunc2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">
@@ -116,5 +125,10 @@
     <Text Include="Week2_2_File3.txt">
       <Filter>Source Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Week4_3_UseFunc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

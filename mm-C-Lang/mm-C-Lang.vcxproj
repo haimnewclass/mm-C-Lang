@@ -168,12 +168,18 @@
     <ClCompile Include="Week4_1_CopyFiles.c" />
     <ClCompile Include="Week4_1_Queue.c" />
     <ClCompile Include="Week4_3_Header.c" />
+    <ClCompile Include="Week4_3_Header2.c" />
+    <ClCompile Include="Week4_3_UseFunc.c" />
+    <ClCompile Include="Week4_3_UseFunc2.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt" />
     <Text Include="Week2_2_File2.txt" />
     <Text Include="Week2_2_File3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Week4_3_UseFunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
