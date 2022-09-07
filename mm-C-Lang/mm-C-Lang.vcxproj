@@ -167,6 +167,7 @@
     <ClCompile Include="Week4_1Argv_Argc.c" />
     <ClCompile Include="Week4_1_CopyFiles.c" />
     <ClCompile Include="Week4_1_Queue.c" />
+    <ClCompile Include="Week4_3_Header.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>
