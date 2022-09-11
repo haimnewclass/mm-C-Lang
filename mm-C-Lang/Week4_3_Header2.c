@@ -41,7 +41,7 @@ t_Item2* NewItem2(int val, int key,int id)
 	return ret;
 }
 
-main()
+main_5_1()
 {
 	
 	// init

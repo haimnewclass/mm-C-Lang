@@ -114,6 +114,9 @@
     <ClCompile Include="Week4_3_UseFunc2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week5_1_fputs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">
