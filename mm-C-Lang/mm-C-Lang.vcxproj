@@ -172,6 +172,8 @@
     <ClCompile Include="Week4_3_UseFunc.c" />
     <ClCompile Include="Week4_3_UseFunc2.c" />
     <ClCompile Include="Week5_1_fputs.c" />
+    <ClCompile Include="Week5_1_Sort.c" />
+    <ClCompile Include="Week5_1_Time.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>

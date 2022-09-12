@@ -5,7 +5,7 @@
 #include <time.h>
 #pragma warning(disable:4996)
 
-main()
+main5_1_time()
 {
 	
 	/*
@@ -21,4 +21,26 @@ main()
 	char str[100];
 	 
 	sprintf(str, "%d%d%d", timeinfo->tm_year, timeinfo->tm_mon, timeinfo->tm_yday);
+}
+
+void Log(char message[100])
+{
+	FILE* f = fopen("MyApp.log", "a");
+	fputs(message,f);
+	fclose(f);
+}
+
+void ErrorLog(char message[100])
+{
+	char newMessage[100];
+	sprintf(newMessage, "Error - %s", message);
+	Log(newMessage);
+}
+
+
+void EventLog(char message[100])
+{
+	char newMessage[100];
+	sprintf(newMessage, "Event - %s", message);
+	Log(newMessage);
 }

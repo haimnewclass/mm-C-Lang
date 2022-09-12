@@ -4,14 +4,14 @@
 #include <string.h>
 #pragma warning(disable:4996)
 
-main()
+main_5_1_2()
 {
 	FILE* f = fopen("myProg.log","w");
-
+	/*
 	2022.11.01:233443 - Event - System is starting
 	2022.11.01:233444 - Error - File Is Not opened
 	2022.11.01:233445 - Event - System is ending
-
+	*/
 
 	fputs("line1\n", f);
 	fputs("line2\n", f);
