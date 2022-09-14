@@ -3,6 +3,7 @@
 #include <stdlib.h> 
 #include <string.h>
 #include <time.h>
+#include <windows.h>
 #pragma warning(disable:4996)
 
 typedef struct ItemNum
@@ -131,11 +132,12 @@ void Sort()
 	}
 
 }
-main()
+main_5_1_sort()
 {
-	Head = NULL;
-	Tail = NULL;
+	
 
+	char Result[255];
+//	GetPrivateProfileString("Params", "a", NULL, Result, 255, "C:\\Users\\haim\\source\\repos\\mm-C-Lang\\mm-C-Lang\\mm-C-Lang");
 
 #ifdef DEBUG_REPLACE_FUNCTION
 	AddItemVal(1);

@@ -123,6 +123,9 @@
     <ClCompile Include="Week5_1_Sort.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week5_5_Parsing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">
