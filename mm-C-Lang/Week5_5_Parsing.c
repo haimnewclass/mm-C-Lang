@@ -16,7 +16,7 @@ struct OskarActor
 };
 
 
-main()
+main_5_4_parse()
 {
 	//123,42545,23,44,123,3,3,4
 	char str[100] = "aaa*bbb*ccc";
