@@ -12,6 +12,7 @@ struct OskarActor
 	char Age;
 	char Movie[1000];
 	char Name[1000];
+	int Popolarity;
 	struct OskarActor* next;
 	struct OskarActor* prev;
 };
@@ -20,7 +21,7 @@ struct OskarActor
 struct OskarActor_Header
 {
 	int Version;
-	int ActorCount;
+	int ItemsCount;
 	char Reserved[1000];
 };
 
