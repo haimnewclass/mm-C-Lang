@@ -54,19 +54,30 @@ struct Color
 };
 
 #define FILE_NAME  "c:\\a\\sample_640×426.pcx"
+#define FILE_NAME2  "c:\\a\\t.pcx"
 
 main()
 {
 	
 	FILE* f;
-
+	FILE* f1;
 	f = fopen(FILE_NAME, "r");
+	f1 = fopen(FILE_NAME2, "wb");
 	if (!f)
 	{
 		// error
 		return;
 	}
 
+	/*
+	unsigned char read;
+	while (fread(&read, 1, 1, f) != NULL)
+	{
+		fwrite(&read, 1, 1, f1);
+	}
+
+	fclose(f1);*/
+ 
 	PCXHEAD pcx_header;
 	if (!fread(&pcx_header, sizeof(PCXHEAD), 1, f))
 	{
@@ -75,30 +86,40 @@ main()
 	}
 
 	// each pixel is one byte
-	int pic_size = sizeof(struct Color) * (pcx_header.YEnd + 1) * (pcx_header.XEnd + 1);
+	int pic_size =  sizeof(struct Color) * (pcx_header.YEnd + 1) * (pcx_header.XEnd + 1);
  
 	struct Color* buffer = (struct Color*)malloc(pic_size);
-
 	fread(buffer, pic_size, 1, f);
+ 
+	fwrite(&pcx_header, sizeof(PCXHEAD), 1, f1);
+	
+ 
 
-	for (int line = 0; line < pcx_header.YEnd; line++)
+
+	 
+	for (int line = 0; line <= pcx_header.YEnd; line++)
 	{
-		for (int col = 0; col < pcx_header.XEnd; col++)
+		for (int col = 0; col <= pcx_header.XEnd; col++)
 		{
+			unsigned char p = 255;
+			p = line % 2?100 : 5;
 			//unsigned char pixel = buffer->color;
-			printf("Next Color %d", buffer->color);
-			buffer++;
+			fwrite(&p, 1, 1, f1);
 		}
 	}
+	
+
+	fclose(f1);
+
+
+
+
+
+	 
+
+	 
 
 	fclose(f);
 
-	struct OskarActor_Header h;
-	h.Version = 1;
-	h.ActorCount = 56;
-	fwrite(&h, sizeof(struct OskarActor_Header), 1, f);
-	for (size_t i = 0; i < 10; i++)
-	{
-		//
-	}
+	
 }
