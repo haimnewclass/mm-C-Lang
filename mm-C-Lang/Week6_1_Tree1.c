@@ -83,7 +83,18 @@ void AddTreeItem(DetailsT item)
 		newLeaf->Parent = Root;
 		newLeaf->level = 1;
 	}
-
+#ifdef SEMION
+	else {
+		struct Leaf* curr = Root;
+		while (curr->Right!=NULL)
+		{
+			if (curr->Left == NULL)
+			{
+				// Add Here
+			}
+		}
+	}
+#endif
 
 }
 
