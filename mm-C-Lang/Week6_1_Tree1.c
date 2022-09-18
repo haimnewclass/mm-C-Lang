@@ -23,23 +23,24 @@ typedef struct Leaf
 struct Leaf* Root;
 struct Leaf* Head;
 
-typedef struct StackItem {
+typedef struct QueueItem {
 	TLeaf leaf;
 
-} TStackItem;
+} TQueueItem;
 
-TStackItem Stack_Head;
-TStackItem Stack_Tail;
+TQueueItem Queue_Head;
+TQueueItem Queue_Tail;
 
-void Stack_Push(TStackItem item)
+void Queue_Push(TQueueItem item)
 {
 
 }
 
-TStackItem  Stack_Pop()
+TQueueItem  Queue_Pop()
 {
 	 
 }
+//////////////////////////////////////
 void AddItem(DetailsT item)
 {
 
