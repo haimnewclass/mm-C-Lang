@@ -1,4 +1,3 @@
 ﻿  Week6_1_Tree1.c
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week6_1_Tree1.c(52,22): error C2039: 'address': is not a member of 'DetailsT'
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week6_1_Tree1.c(8): message : see declaration of 'DetailsT'
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week6_1_Tree1.c(52,8): error C2198: 'strcpy': too few arguments for call
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week6_1_Tree1.c(56): warning C4716: 'Queue_Pop': must return a value
+  mm-C-Lang.vcxproj -> C:\Users\haim\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe
