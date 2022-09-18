@@ -24,19 +24,19 @@ struct Leaf* Root;
 struct Leaf* Head;
 
 typedef struct QueueItem {
-	TLeaf leaf;
+	TLeaf *leaf;
 
 } TQueueItem;
 
-TQueueItem Queue_Head;
-TQueueItem Queue_Tail;
+TQueueItem *Queue_Head;
+TQueueItem *Queue_Tail;
 
-void Queue_Push(TQueueItem item)
+void Queue_Push(TQueueItem* item)
 {
 
 }
 
-TQueueItem  Queue_Pop()
+TQueueItem*  Queue_Pop()
 {
 	 
 }
