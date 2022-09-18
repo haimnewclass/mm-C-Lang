@@ -53,15 +53,27 @@ struct Color
 	unsigned char color;
 };
 
+
+struct ColorRGB
+{
+	unsigned char R;
+	unsigned char G;
+	unsigned char B;
+};
+
 #define FILE_NAME  "c:\\a\\sample_640×426.pcx"
+
+#define FILE_NAME3  "c:\\a\\bunny.pcx"
+
+
 #define FILE_NAME2  "c:\\a\\t.pcx"
 
-main()
+main_5_4_PCX()
 {
 	
 	FILE* f;
 	FILE* f1;
-	f = fopen(FILE_NAME, "r");
+	f = fopen(FILE_NAME3, "r");
 	f1 = fopen(FILE_NAME2, "wb");
 	if (!f)
 	{
@@ -91,20 +103,28 @@ main()
 	struct Color* buffer = (struct Color*)malloc(pic_size);
 	fread(buffer, pic_size, 1, f);
  
+ 
 	fwrite(&pcx_header, sizeof(PCXHEAD), 1, f1);
 	
  
-
-
+	//https://stackoverflow.com/questions/46856570/how-to-create-bitmap-in-c-and-compile-with-gcc
+	struct ColorRGB rgb;
+	unsigned char p = 0xff;
 	 
 	for (int line = 0; line <= pcx_header.YEnd; line++)
 	{
+	//	p = line % 2 ? 255 : 1;
 		for (int col = 0; col <= pcx_header.XEnd; col++)
 		{
-			unsigned char p = 255;
-			p = line % 2?100 : 5;
+			rgb.B = 0xff;
+			rgb.G = 0;
+			rgb.R = 0;
+
+			if (line > 100 && line < 150)
+				p = 0xc8;
+			
 			//unsigned char pixel = buffer->color;
-			fwrite(&p, 1, 1, f1);
+			fwrite(&p, sizeof(char), 1, f1);
 		}
 	}
 	

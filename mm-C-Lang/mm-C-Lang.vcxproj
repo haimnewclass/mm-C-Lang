@@ -176,6 +176,7 @@
     <ClCompile Include="Week5_1_Time.c" />
     <ClCompile Include="Week5_4_ReadHeader.c" />
     <ClCompile Include="Week5_5_Parsing.c" />
+    <ClCompile Include="Week6_1_Tree1.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>
