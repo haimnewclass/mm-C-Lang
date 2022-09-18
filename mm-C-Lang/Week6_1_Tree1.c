@@ -33,106 +33,14 @@ typedef struct QueueItem {
 TQueueItem *Queue_Head;
 TQueueItem *Queue_Tail;
 
-void Queue_Push(TLeaf* leaf)
-{
-	//malloc
-}
-
-
-void Queue_Status()
-{
-
-}
-
-
-void Queue_Clear()
-{
-
-}
-
-TQueueItem*  Queue_Pop()
-{
-	 
-}
-
-//////////////////////////////////////
-void AddTreeItem(DetailsT item)
-{
-	// Add new item into Tree
-	struct Leaf* newLeaf = (struct Leaf*)malloc(sizeof(struct Leaf));
-	newLeaf->Details = item;
-
-	newLeaf->Right = NULL;
-	newLeaf->Left = NULL;
-	
-	if (Root == NULL)
-	{
-		newLeaf->Parent = NULL;
-		Root = newLeaf;
-		newLeaf->level = 0;
-	}
-	else if (Root->Right == NULL)
-	{
-		Root->Right = newLeaf;
-		newLeaf->Parent = Root;
-		newLeaf->level = 1;
-	}
-	else if (Root->Left == NULL)
-	{
-		Root->Left = newLeaf;
-		newLeaf->Parent = Root;
-		newLeaf->level = 1;
-	}
-#ifdef SEMION
-	else {
-		struct Leaf* curr = Root;
-		while (curr->Right!=NULL)
-		{
-			if (curr->Left == NULL)
-			{
-				// Add Here
-			}
-		}
-	}
-#endif
-
-}
-
-
-void BuildTree()
-{
-	for (int i = 0; i < 100; i++)
-	{
-		DetailsT* details = (DetailsT*)malloc(sizeof(DetailsT));
-		details->age = i;
-
-		AddTreeItem(*details);
-	}
-}
-
-void FromQueueToTree()
-{
-	 
-}
-
-TLeaf* FindEmptyPlaceLeaf(TLeaf* leaf)
-{
-	if (leaf->Left != NULL)
-		return leaf->Left;
-	else if (leaf->Right != NULL)
-		return leaf->Right;
-	else
-		return NULL;
-}
-
-main()
+  
+main_6_1_1()
 {
 	Root = NULL;
 	Queue_Tail = NULL;
 	Queue_Head = NULL;
 
-	BuildTree();
-	struct Leaf leaf;
+ 	struct Leaf leaf;
 	struct Leaf *leafPtr = (struct Leaf* ) malloc(sizeof(struct Leaf));
 
 	leaf.Details.age = 23;

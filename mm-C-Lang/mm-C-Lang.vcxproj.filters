@@ -132,6 +132,9 @@
     <ClCompile Include="Week6_1_Tree1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week6_1_Tree2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">

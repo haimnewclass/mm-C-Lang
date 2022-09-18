@@ -72,7 +72,7 @@ struct Item* Pop()
 
 #undef SAMPLE
 
-int main_4_1_897()
+int main_4_1_Queue()
 {
 	srand(time());
 	Head = NULL;
