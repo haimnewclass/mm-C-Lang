@@ -1,6 +1,4 @@
-﻿  Week5_4_ReadHeader.c
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week5_4_ReadHeader.c(81,3): warning C4033: 'main_5_4_PCX' must return a value
-C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week5_4_ReadHeader.c(97,3): warning C4033: 'main_5_4_PCX' must return a value
-  Week6_1_Tree1.c
-  Generating Code...
-  mm-C-Lang.vcxproj -> C:\Users\haim\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe
+﻿  Week6_1_Tree1.c
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week6_1_Tree1.c(52,22): error C2039: 'address': is not a member of 'DetailsT'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week6_1_Tree1.c(8): message : see declaration of 'DetailsT'
+C:\Users\haim\source\repos\mm-C-Lang\mm-C-Lang\Week6_1_Tree1.c(52,8): error C2198: 'strcpy': too few arguments for call

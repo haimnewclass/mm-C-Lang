@@ -7,12 +7,9 @@
 typedef struct
 {
 	int age;
-	char name[100];
-	char address[100];
-
 } DetailsT;
 
-struct Leaf
+typedef struct Leaf
 {
 	// Management or MetaData
 	int level;
@@ -22,10 +19,31 @@ struct Leaf
 
 	// Data (Real Data)
 	DetailsT Details;
-};
+} TLeaf;
 struct Leaf* Root;
 struct Leaf* Head;
 
+typedef struct StackItem {
+	TLeaf leaf;
+
+} TStackItem;
+
+TStackItem Stack_Head;
+TStackItem Stack_Tail;
+
+void Stack_Push(TStackItem item)
+{
+
+}
+
+TStackItem  Stack_Pop()
+{
+	 
+}
+void AddItem(DetailsT item)
+{
+
+}
 main()
 {
 	struct Leaf leaf;
