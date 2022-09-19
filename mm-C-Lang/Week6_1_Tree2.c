@@ -183,9 +183,13 @@ TLeaf* FindEmptyPlaceLeaf(TLeaf* leaf)
 	else
 		return NULL;
 }
-
-main()
+ 
+main_6_2_1()
 {
+ 
+
+	 
+
 	Root = NULL;
 	Queue_Tail = NULL;
 	Queue_Head = NULL;

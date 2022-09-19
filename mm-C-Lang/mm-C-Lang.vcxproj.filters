@@ -135,6 +135,15 @@
     <ClCompile Include="Week6_1_Tree2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Week6_2_Lib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week6_2_Recursion.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Week6_2_Tree3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Week2_2_File1.txt">
@@ -150,6 +159,9 @@
   <ItemGroup>
     <ClInclude Include="Week4_3_UseFunc.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mm_c_Utilities.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
