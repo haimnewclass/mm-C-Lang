@@ -66,6 +66,7 @@ void AddLeaf(TLeaf* curr, int val)
 	
 	}
 }
+
 main()
 {
 	Root = NULL;
@@ -81,4 +82,5 @@ main()
 	AddLeaf(NULL, 10);
 	AddLeaf(NULL, 100);
 
+	PrintTree();
 }
