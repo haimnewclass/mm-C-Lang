@@ -51,6 +51,27 @@ void PrintMemoryInfo(DWORD processID)
 			pmc.PeakPagefileUsage);
 	}
 
+
+
+	// Get Dlls List
+
+	if (EnumProcessModules(hProcess, hMods, sizeof(hMods), &cbNeeded))
+	{
+		for (int i = 0; i < (cbNeeded / sizeof(HMODULE)); i++)
+		{
+			TCHAR szModName[MAX_PATH];
+
+			// Get the full path to the module's file.
+
+			if (GetModuleFileNameEx(hProcess, hMods[i], Buffer2, MAX_PATH))
+			{
+				// Print the module name and handle value.
+				printf("%s", Buffer);
+
+			}
+		}
+	}
+
 	CloseHandle(hProcess);
 }
 void GetProcessesInfo()
