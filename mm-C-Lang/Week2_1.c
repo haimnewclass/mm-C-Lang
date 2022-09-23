@@ -17,7 +17,7 @@ int main2_1()
 	a -= 10; // a= a-10;
 
 
-	num << 2;	
+	num << 2;	         //***
 	unsigned char num2;
 	unsigned int num5;
 
