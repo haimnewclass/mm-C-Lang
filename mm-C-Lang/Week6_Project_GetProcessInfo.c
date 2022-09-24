@@ -104,9 +104,10 @@ void GetProcessesInfo()
 	// For each Process to get its Memory Information
 
 }
-
+#ifdef DEBUG
 main()
 {
 	GetProcessesInfo();
 	return 0;
 }
+#endif
