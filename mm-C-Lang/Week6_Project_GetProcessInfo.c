@@ -5,33 +5,49 @@
 #include <psapi.h>
 #pragma warning(disable:4996)
 
-
-void PrintMemoryInfo(DWORD processID)
+struct ProcessDetails
 {
+	char DLLName[MAX_PATH];
+	PROCESS_MEMORY_COUNTERS pmc;
+	// Dynamic DLL List
+	
+};
+
+struct ProcessDetails PrintMemoryInfo(DWORD processID)
+{
+
+	struct ProcessDetails ret;
+
 	HANDLE hProcess;
 	PROCESS_MEMORY_COUNTERS pmc;
 	
+	// Open process in order to receive information
 	hProcess = OpenProcess(PROCESS_QUERY_INFORMATION |
 		PROCESS_VM_READ,
 		FALSE, processID);
 	if (NULL == hProcess)
+	{
+		// Write to log a warning
 		return;
+	}
 
 	HMODULE hMods[1024];
 	DWORD cbNeeded;
-	TCHAR Buffer[MAX_PATH];
-	TCHAR Buffer2[MAX_PATH];
+	TCHAR FoundProcessName[MAX_PATH];
+	TCHAR wDllName[MAX_PATH];
+	char regularCharArr[MAX_PATH];
 
-	if (GetModuleFileNameEx(hProcess, 0, Buffer, MAX_PATH))
+	// Get Process Name
+	if (GetModuleFileNameEx(hProcess, 0, FoundProcessName, MAX_PATH))
 	{
 		// At this point, buffer contains the full path to the executable
 	}
 	else
 	{
 		// You better call GetLastError() here
+		// Write To log
 	}
-
-
+	
 	if (GetProcessMemoryInfo(hProcess, &pmc, sizeof(pmc)))
 	{
 		printf("\tPageFaultCount: 0x%08X\n", pmc.PageFaultCount);
@@ -58,16 +74,21 @@ void PrintMemoryInfo(DWORD processID)
 	if (EnumProcessModules(hProcess, hMods, sizeof(hMods), &cbNeeded))
 	{
 		for (int i = 0; i < (cbNeeded / sizeof(HMODULE)); i++)
-		{
-			TCHAR szModName[MAX_PATH];
-
+		{		
 			// Get the full path to the module's file.
 
-			if (GetModuleFileNameEx(hProcess, hMods[i], Buffer2, MAX_PATH))
+			if (GetModuleFileNameEx(hProcess, hMods[i], wDllName, MAX_PATH))
 			{
-				// Print the module name and handle value.
-				printf("%s", Buffer);
+				// * Get the module name and handle value.
+				printf("%s", wDllName);
 
+				// Convert wChar to regular char array (string)
+				char dllName[MAX_PATH];
+				size_t numConverted;
+				wcstombs_s(&numConverted, dllName, MAX_PATH, wDllName, MAX_PATH);
+
+				int tmp = 0;
+				tmp++;
 			}
 		}
 	}
@@ -77,11 +98,12 @@ void PrintMemoryInfo(DWORD processID)
 void GetProcessesInfo()
 {
 	// Get Processes
-	// Receive all process ID
+	
 
 	DWORD aProcesses[1024], cbNeeded, cProcesses;
 	unsigned int i;
 
+	// * Receive all process ID and put in aProcesses Array
 	if (!EnumProcesses(aProcesses, sizeof(aProcesses), &cbNeeded))
 	{
 		// Error. Write to log
@@ -89,11 +111,10 @@ void GetProcessesInfo()
 	}
 
 	// Calculate how many process identifiers were returned.
-
 	cProcesses = cbNeeded / sizeof(DWORD);
 
 	// Print the memory usage for each process
-
+	// *Loop of all processes
 	for (i = 0; i < cProcesses; i++)
 	{
 		PrintMemoryInfo(aProcesses[i]);
@@ -104,7 +125,8 @@ void GetProcessesInfo()
 	// For each Process to get its Memory Information
 
 }
-#ifdef DEBUG
+#undef PROCESS_MAIN
+#ifdef PROCESS_MAIN
 main()
 {
 	GetProcessesInfo();

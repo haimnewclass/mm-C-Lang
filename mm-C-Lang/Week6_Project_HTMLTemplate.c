@@ -41,7 +41,7 @@ char* ReadAllFile(char* fileName)
 
 	free(buff);
 	fclose(f);
-
+	fileSize++;
 	// alloc space as file size
 	buff = (char*)malloc(fileSize);
 
@@ -64,35 +64,35 @@ char* ReadAllFile(char* fileName)
 	return buff;
 }
 
+#define MAIN_HTML_GENERATION
+#ifdef MAIN_HTML_GENERATION
 int main()
 {
-
-
 
 	char HTML_REPLACE[]= "<div>HAIM</div>";
 	char* htmlTemplate = ReadAllFile("C:\\Users\\ASI\\source\\repos\\mm-C-Lang\\mm-C-Lang\\Test.html");
 
+
+	// find the token
 	char* found = strstr(htmlTemplate, SEPERATOR);
 	
 	int len = found - htmlTemplate;
-	char* newBuff = (char*)malloc(strlen(htmlTemplate)+strlen(HTML_REPLACE));
+	char* newFileSpace = (char*)malloc(strlen(htmlTemplate)+strlen(HTML_REPLACE));
 
-	strncpy(newBuff, htmlTemplate,len);
-	newBuff[len] = NULL;
+	strncpy(newFileSpace, htmlTemplate,len);
+	newFileSpace[len] = NULL;
 
+	strcat(newFileSpace, HTML_REPLACE);
+	newFileSpace[len+strlen(HTML_REPLACE)] = NULL;
 
+	strcat(newFileSpace, found + strlen(SEPERATOR));
 
-	strcat(newBuff, HTML_REPLACE);
-
-	newBuff[len+strlen(HTML_REPLACE)] = NULL;
-
-	strcat(newBuff, found + strlen(SEPERATOR));
-
-	SaveIntoFile("newTest.html", newBuff);
+	SaveIntoFile("newTest.html", newFileSpace);
 
 
-	free(newBuff);
+	free(newFileSpace);
 	free(htmlTemplate);
 
 	return 0;
 }
+#endif
