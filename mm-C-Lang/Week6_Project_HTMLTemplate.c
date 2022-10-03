@@ -64,7 +64,7 @@ char* ReadAllFile(char* fileName)
 	return buff;
 }
 
-#define MAIN_HTML_GENERATION
+#undef MAIN_HTML_GENERATION
 #ifdef MAIN_HTML_GENERATION
 int main()
 {

@@ -184,6 +184,7 @@
     <ClCompile Include="Week6_2_Lib.c" />
     <ClCompile Include="Week6_2_Recursion.c" />
     <ClCompile Include="Week6_2_Tree3.c" />
+    <ClCompile Include="Week6_Project_CatchKey.c" />
     <ClCompile Include="Week6_Project_GetProcessInfo.c" />
     <ClCompile Include="Week6_Project_HTMLTemplate.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />

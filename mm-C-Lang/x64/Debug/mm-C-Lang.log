@@ -1,8 +1,2 @@
-﻿  Week6_Project_HTMLTemplate.c
-C:\Users\ASI\source\repos\mm-C-Lang\mm-C-Lang\Week6_Project_HTMLTemplate.c(39,21): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\ASI\source\repos\mm-C-Lang\mm-C-Lang\Week6_Project_HTMLTemplate.c(60,27): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\Users\ASI\source\repos\mm-C-Lang\mm-C-Lang\Week6_Project_HTMLTemplate.c(83,26): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\Users\ASI\source\repos\mm-C-Lang\mm-C-Lang\Week6_Project_HTMLTemplate.c(86,47): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\Users\ASI\source\repos\mm-C-Lang\mm-C-Lang\Week6_Project_HTMLTemplate.c(79,18): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-C:\Users\ASI\source\repos\mm-C-Lang\mm-C-Lang\Week6_Project_HTMLTemplate.c(23): warning C4715: 'SaveIntoFile': not all control paths return a value
+﻿  Week6_Project_CatchKey.c
   mm-C-Lang.vcxproj -> C:\Users\ASI\source\repos\mm-C-Lang\x64\Debug\mm-C-Lang.exe
