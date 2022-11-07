@@ -5,7 +5,7 @@
 #include <windows.h>
 #pragma warning(disable:4996)
 
-int main()
+static int main()
 {
 	// To Start
 	// Until Stop

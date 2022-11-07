@@ -31,6 +31,8 @@ struct ProcessDetails PrintMemoryInfo(DWORD processID)
 		return;
 	}
 
+
+
 	HMODULE hMods[1024];
 	DWORD cbNeeded;
 	TCHAR FoundProcessName[MAX_PATH];
@@ -47,7 +49,8 @@ struct ProcessDetails PrintMemoryInfo(DWORD processID)
 		// You better call GetLastError() here
 		// Write To log
 	}
-	
+
+
 	if (GetProcessMemoryInfo(hProcess, &pmc, sizeof(pmc)))
 	{
 		printf("\tPageFaultCount: 0x%08X\n", pmc.PageFaultCount);
@@ -67,7 +70,7 @@ struct ProcessDetails PrintMemoryInfo(DWORD processID)
 			pmc.PeakPagefileUsage);
 	}
 
-
+ 
 
 	// Get Dlls List
 
@@ -94,6 +97,7 @@ struct ProcessDetails PrintMemoryInfo(DWORD processID)
 	}
 
 	CloseHandle(hProcess);
+
 }
 void GetProcessesInfo()
 {

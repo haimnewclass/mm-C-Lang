@@ -187,6 +187,9 @@
     <ClCompile Include="Week6_Project_CatchKey.c" />
     <ClCompile Include="Week6_Project_GetProcessInfo.c" />
     <ClCompile Include="Week6_Project_HTMLTemplate.c" />
+    <ClCompile Include="Week7_2_functionPointers.c" />
+    <ClCompile Include="Week7_2_sprintf.c" />
+    <ClCompile Include="Week7_2_static.c" />
     <ClCompile Include="Week_3_1_BinFiles.c" />
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +200,7 @@
   <ItemGroup>
     <ClInclude Include="mm_c_Utilities.h" />
     <ClInclude Include="Week4_3_UseFunc.h" />
+    <ClInclude Include="Week7_2_sprintf.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
